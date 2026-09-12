@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.1-nightly.20260912.acf3862",
+    "published_at": "2026-09-12T12:58:16.645Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.1-nightly.20260912.acf3862",
+    "name": "Memtrace 1.2.1-nightly.20260912.acf3862",
+    "body": "Quieter background work, clearer resource usage and complete release history\n\n### Fixed\n- Synthetic search warmup finishes after startup instead of repeating while the workspace is idle. Normal search and model warmup remain available.\n- Cursor transcript capture uses indexed lookups instead of scanning unrelated records in large local conversation databases. Regression checks preserve the captured records and literal conversation identifiers.\n- File notifications from Memtrace storage are filtered before they enter the watcher queue, reducing background work caused by the database writing its own files.\n- Insights loads and refreshes panels on demand, so opening the dashboard no longer starts expensive work for every hidden panel.\n- Database property queries filter matching records before decoding their properties, reducing repeated work on large stores.\n- Windows-shaped import paths resolve consistently across platforms. Explicitly imported callees remain distinct from same-named declarations in neighbouring files.\n\n### Improved\n- Resource accounting includes the database and decision-memory processes owned by Memtrace, making background CPU and memory usage easier to diagnose.\n- Windows packages must pass Microsoft Defender scans before publication. Release checks cover both standard and no-AVX2 packages; a rejected executable blocks publication.\n- The public website and installed UI retain the complete archived Stable and Nightly release history. Original publication dates and actual nightly versions are preserved, older notes remain readable during a failed refresh, and new release archives update independently of Discord announcements.\n- Release notes retain environment-variable underscores and accept older Markdown layouts, so published instructions and historical notes remain readable.\n\n### Changed\n- These changes do not establish a universal idle-CPU target or a guaranteed first-index time. Large populated macOS workspaces and long first-index runs still require a measured retest on the affected setup.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.1-nightly.20260911.7c6ebec",
     "published_at": "2026-09-11T13:36:00.836Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.1-nightly.20260911.7c6ebec",
