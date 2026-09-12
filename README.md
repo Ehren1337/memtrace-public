@@ -4,8 +4,12 @@
 
 <h1 align="center">Your agents deserve <i>structural memory</i>.</h1>
 
+**Official Memtrace by Syncable.** Start at [memtrace.io/docs](https://www.memtrace.io/docs/getting-started). The official package is [memtrace on npm](https://www.npmjs.com/package/memtrace), and the public repository is [syncable-dev/memtrace-public](https://github.com/syncable-dev/memtrace-public). Other projects with the same name are unrelated. Compare `memtrace --version` with the [Stable and Nightly release history](https://www.memtrace.io/changelog).
+
+For installation support, open an issue in the official public repository with your operating system, Memtrace version and exact error. Remove credentials and private source from shared logs. The Syncable team maintains this package and its support channels.
+
 <p align="center">
-  <a href="docs/">📖 Docs</a> &nbsp;·&nbsp;
+  <a href="https://www.memtrace.io/docs/getting-started">📖 Docs</a> &nbsp;·&nbsp;
   <a href="https://github.com/syncable-dev/memtrace-public/stargazers">⭐ Star us</a> &nbsp;·&nbsp;
   <a href="https://memtrace.io">memtrace.io</a> &nbsp;·&nbsp;
   <a href="https://www.npmjs.com/package/memtrace">npm</a> &nbsp;·&nbsp;
