@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.4-nightly.20260913.3b74f73",
+    "published_at": "2026-09-13T16:50:32.683Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260913.3b74f73",
+    "name": "Memtrace 1.2.4-nightly.20260913.3b74f73",
+    "body": "Nightly development starts from Memtrace 1.2.3\n\n### New\n- New features reach the nightly channel first: npm install -g memtrace@nightly. Nightly is not always stable. The default install receives stable releases, and memtrace install keeps the current channel.\n\n### Changed\n- The nightly channel moves to the 1.2.4 development series, starting from stable 1.2.3, where memtrace mcp and memtrace status attach to a running external-mode daemon by its heartbeat. The complete notes are in the 1.2.3 entry below.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.3",
     "published_at": "2026-09-13T15:59:07Z",
     "html_url": "https://github.com/syncable-dev/memtrace-public/releases/tag/v1.2.3",
