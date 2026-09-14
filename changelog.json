@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.4-nightly.20260914.309c70d",
+    "published_at": "2026-09-14T23:30:32.315Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260914.309c70d",
+    "name": "Memtrace 1.2.4-nightly.20260914.309c70d",
+    "body": "### Fixed\n- Organization invitations can be accepted when the invited address and the account differ only by a plus tag — an invite sent to name@example.com now works for someone who signs in as name+tag@example.com, because both spellings reach the same mailbox. When the addresses genuinely differ, the invite page says which address it expected instead of giving one message for every cause, and its sign-in button signs you out first rather than returning you to the same error.\n\n### Changed\n- The first start after upgrading re-indexes each repository once. Configuration keys are identified by their key path rather than their position in the file from this release on, so existing indexes are rebuilt to match; this happens automatically and reports progress. Repositories stay searchable from their existing index until the rebuild for that repository finishes.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.4-nightly.20260914.ab0473e",
     "published_at": "2026-09-14T22:52:45.254Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260914.ab0473e",
