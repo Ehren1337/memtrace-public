@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.4-nightly.20260914.ab0473e",
+    "published_at": "2026-09-14T22:52:45.254Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260914.ab0473e",
+    "name": "Memtrace 1.2.4-nightly.20260914.ab0473e",
+    "body": "Saving a file stops re-indexing the whole file\n\n### Fixed\n- Saving a file no longer re-indexes it from scratch. Editors that save atomically — VS Code, IntelliJ, and vim in its default configuration — write a temporary file and rename it over the original, which the file watcher reports as a deletion followed by a creation. Memtrace treated that as a real deletion, discarded everything it knew about the file, and then re-created every symbol and relationship in it. On a 6,000-key YAML, inserting one line re-created 6,063 symbols and tombstoned 12,119 relationships in about three seconds; it now updates 1 symbol and 2 relationships in about 0.7 seconds, and writes roughly a tenth as much to the store. This affected every file type, not only configuration files.\n- A configuration key's identity is now its dotted path rather than its line number, so inserting or removing a line above other keys no longer changes their identity. Config files were the most affected because they emit roughly one symbol per line, where source code emits about one per twenty.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.4-nightly.20260914.7d4d26a",
     "published_at": "2026-09-14T19:10:35.747Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260914.7d4d26a",
