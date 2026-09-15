@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.5",
+    "published_at": "2026-09-15T15:38:29Z",
+    "html_url": "https://github.com/syncable-dev/memtrace-public/releases/tag/v1.2.5",
+    "name": "Memtrace v1.2.5",
+    "body": "## Memtrace v1.2.5\n\nDecision recall finds your decisions again\n\n### Fixed\n\n- Decision recall returns your recorded decisions again on Windows. Recall asks decision memory for decisions belonging to the workspace you are in, and the answer is matched against the workspace each decision was captured under — but the two were being written in different spellings of the same path, so nothing ever matched. Every query answered \"no decisions recorded\" while the Cortex tab showed a full store, which is a misleading answer for an agent checking prior decisions before it edits. Both sides now spell a workspace the same way, and decisions captured by earlier versions are still found.\n- A failure in the Memtrace rail hook no longer blocks your coding agent. When the hook could not run — unreadable input, or arguments a newer configuration used that the installed version did not recognise — it exited in a way the editor reads as \"denied\", and the editor then refused every tool call for the rest of the conversation, including the ones needed to diagnose it. Reloading the editor did not clear it. The hook now allows the tool call and explains itself instead.\n- Members of an organization with an active subscription get the Insights panel. Insights unlocked only through referrals, so people whose organization had already bought seats were told to go and refer others first. Approving an organization now grants every member access, with nothing to set per person.\n\n### Install\n\n```bash\nnpm install -g memtrace\n```\n",
+    "prerelease": false,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.5-nightly.20260915.969eb34",
     "published_at": "2026-09-15T14:39:12.953Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.5-nightly.20260915.969eb34",
