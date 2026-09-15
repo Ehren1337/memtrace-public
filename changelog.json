@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.4-nightly.20260915.b483c0d",
+    "published_at": "2026-09-15T09:55:48.053Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260915.b483c0d",
+    "name": "Memtrace 1.2.4-nightly.20260915.b483c0d",
+    "body": "No new customer-facing notes this soak.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.4-nightly.20260915.72202ed",
     "published_at": "2026-09-15T07:56:29.244Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260915.72202ed",
