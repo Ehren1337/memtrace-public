@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.4-nightly.20260914.1fd7d7e",
+    "published_at": "2026-09-15T00:14:37.847Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260914.1fd7d7e",
+    "name": "Memtrace 1.2.4-nightly.20260914.1fd7d7e",
+    "body": "### Fixed\n- Organization invitations can be accepted when the invited address and the account differ only by a plus tag — an invite sent to name@example.com now works for someone who signs in as name+tag@example.com, because both spellings reach the same mailbox.\n- The organization invite page now says why an invitation cannot be used instead of giving one message for every cause: whether it was sent to a different address, has expired, or was cancelled. Its sign-in button signs you out first, so it no longer returns you to the same error while you are still signed in as the wrong account, and opening an invite link for an organization you already joined takes you into that workspace rather than reporting a failure.\n\n### Changed\n- Configuration keys are identified by their key path rather than their position in the file from this release on. Existing indexes keep working and need no action: the entries for a file are brought up to date the first time that file is re-indexed or edited. If you would rather clear a store in one step, run memtrace index --clear on that repository.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.4-nightly.20260914.309c70d",
     "published_at": "2026-09-14T23:30:32.315Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.4-nightly.20260914.309c70d",
