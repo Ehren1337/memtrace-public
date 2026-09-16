@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.6-nightly.20260916.0d11d8d",
+    "published_at": "2026-09-16T10:58:18.880Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.6-nightly.20260916.0d11d8d",
+    "name": "Memtrace 1.2.6-nightly.20260916.0d11d8d",
+    "body": "### Improved\n- The update prompt says what the new version contains. When a newer build is available, Memtrace now links that version's release notes next to the version you are on and the one on offer — on the nightly channel that is the whole question you are being asked. Accepting shows which step the upgrade is on and how long it has been running, rather than a single line while the package manager's output scrolls past; if the upgrade fails, that output is printed in full before the remedy. Output that is captured rather than shown in a terminal — an agent's log, CI — keeps the plain form. Set MEMTRACE_PLAIN_OUTPUT=1 for plain text in a terminal too, or MEMTRACE_VERBOSE_UPGRADE=1 to watch the package manager's own output during an upgrade.\n\n### Fixed\n- A function handed to another function by reference now counts as a caller. Passing a function as an argument — run_in_threadpool(parse_transactions_csv, body), rows.map(formatRow), Thread(target=run_job) — was invisible to the graph, because only the function being called directly was read from each call. A symbol used that way reported zero callers and showed only its importing file under \"Called by\", so dead-code and blast-radius answers were wrong in the direction that costs you: they said nothing reached a symbol that something did. These now resolve to the function that passes the reference, labelled \"passed as an argument\" so you can tell an indirect call from a direct one. Sibling files in a Go package are still an exception, because Go names them with no import to resolve against. Existing indexes pick this up when a file is re-indexed or edited; memtrace index --clear applies it to a repository in one step.\n- The Called by and References lists explain how each relationship was found in words rather than internal codes — \"imported here, never called\" instead of unused-import-specifier.\n- ⌘V / Ctrl+V works in the dashboard's search and filter fields when it is open inside an embedded browser. Preview panes in coding tools consume the paste shortcut themselves and never pass it to the page, so the field stayed empty while typing worked normally. The dashboard now reads the clipboard itself when the paste never arrives, and leaves the ordinary path alone everywhere it already works.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.6-nightly.20260916.2544514",
     "published_at": "2026-09-16T09:32:57.721Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.6-nightly.20260916.2544514",
