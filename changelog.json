@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.6-nightly.20260916.6f8d45d",
+    "published_at": "2026-09-16T19:21:23.223Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.6-nightly.20260916.6f8d45d",
+    "name": "Memtrace 1.2.6-nightly.20260916.6f8d45d",
+    "body": "### Fixed\n- Deleting a file, or removing a function or type from one, while Memtrace is running now reliably removes it from the graph, whether you or your coding agent made the change. Some graph stores had accumulated more than one live copy of the same symbol (indexing a repository that has several local branches did this about half the time), and a deletion retired only one copy, so search, the graph page, and your agent kept being handed code that no longer existed anywhere in your checkout. Every copy is now retired when its file is deleted or its definition removed, including copies that were already in your store, with no reindex required.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.6-nightly.20260916.1676171",
     "published_at": "2026-09-16T13:17:52.964Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.6-nightly.20260916.1676171",
