@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.6-nightly.20260916.5e7a806",
+    "published_at": "2026-09-17T00:38:37.423Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.6-nightly.20260916.5e7a806",
+    "name": "Memtrace 1.2.6-nightly.20260916.5e7a806",
+    "body": "Deleted code leaves the graph, and pulls no longer stall\n\n### Improved\n- The node inspector in /ui now shows the route registration for an API endpoint that was discovered from a route, instead of an empty Code tab, and says where a widened code snippet came from. When the Memtrace owner process is unreachable, the inspector's Code, Info and History tabs show the backend's message and the `memtrace start` recovery step with a Retry, instead of a spinner or a claim that the symbol has no history.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.6-nightly.20260916.9976905",
     "published_at": "2026-09-16T23:11:22.691Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.6-nightly.20260916.9976905",
