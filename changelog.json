@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.7-nightly.20260917.02fa2d7",
+    "published_at": "2026-09-17T12:03:22.296Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.7-nightly.20260917.02fa2d7",
+    "name": "Memtrace 1.2.7-nightly.20260917.02fa2d7",
+    "body": "### Fixed\n- Stale copies of edited functions no longer hang on the outer ring of the graph. When a function moves to a different line, Memtrace records the moved version as a new symbol and retires the old one; on some stores the old version's connections were retired but the symbol itself was written back as live, so it survived with no connections at all and the layout parked it on the ring reserved for unconnected nodes — on a nine-repository workspace that was about 1,200 ghost Rust functions, each with a connected twin of the same name in the same file. The graph now drops a symbol that has no connections when a connected symbol with the same name exists in the same file. Nothing else on that ring changes: files with no symbols (READMEs, empty __init__.py files) and symbols whose file has no entry of its own are real and stay. The ghosts leave the picture the next time a repository is indexed; run `memtrace index` to apply it to an existing store in one step.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.7-nightly.20260917.8a4331f",
     "published_at": "2026-09-17T11:24:10.230Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.7-nightly.20260917.8a4331f",
