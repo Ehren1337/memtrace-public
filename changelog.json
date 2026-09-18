@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.7-nightly.20260918.2a7b2c3",
+    "published_at": "2026-09-18T13:41:14.727Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.7-nightly.20260918.2a7b2c3",
+    "name": "Memtrace 1.2.7-nightly.20260918.2a7b2c3",
+    "body": "### Fixed\n- On a machine running more than one Memtrace — a workspace on port 3030 and a second store that fell back to 3031 — a tool call routed to the other daemon now reaches it. The runtime registry advertised the port each daemon was configured with, not the one it actually bound after the fallback, so the call went to whichever daemon held the configured port and was refused there. The registry now records the bound port, and the router reads the port from the daemon's own published state first.\n- Session-ledger rows no longer fuse when two Memtrace sessions write at the same moment. A row was written as two pieces — the JSON, then its newline — so simultaneous sessions could interleave and produce a line holding two records, which the ledger readers then dropped. Each row is now written in one piece.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.7-nightly.20260918.6121f8f",
     "published_at": "2026-09-18T12:17:36.743Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.7-nightly.20260918.6121f8f",
