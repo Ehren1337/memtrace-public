@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.8-nightly.20260921.ccc7f4f",
+    "published_at": "2026-09-21T13:53:42.133Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.8-nightly.20260921.ccc7f4f",
+    "name": "Memtrace 1.2.8-nightly.20260921.ccc7f4f",
+    "body": "A refused start leaves your daemon running\n\n### Fixed\n- A `memtrace start` that cannot open the store no longer stops the Memtrace already serving that workspace. When a store belongs to a workspace file or a named workspace, a bare `memtrace start` from a folder above your projects is refused rather than allowed to widen it — but it stopped the running daemon on its way to refusing, so the workspace was left with nothing serving and no dashboard, under an error that ended “No data was changed”. The refusal now happens before anything is stopped, so the Memtrace you already had keeps serving and the message tells you which command to run. The added check is read-only — it takes no locks and writes nothing — and the authoritative check still runs where it always did.\n- The line Memtrace prints when a `memtrace start` replaces the daemon already serving a workspace no longer calls that daemon unhealthy. Three of the four reasons to replace one — `--force`, a change in workspace membership, and an unsafe store scope — say nothing about its health, and the actual reason is already printed on the line above.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.7",
     "published_at": "2026-09-21T08:25:32Z",
     "html_url": "https://github.com/syncable-dev/memtrace-public/releases/tag/v1.2.7",
