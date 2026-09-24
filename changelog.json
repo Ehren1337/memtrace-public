@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.8-nightly.20260924.03ca906",
+    "published_at": "2026-09-24T10:43:12.461Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.8-nightly.20260924.03ca906",
+    "name": "Memtrace 1.2.8-nightly.20260924.03ca906",
+    "body": "### Fixed\n- On Windows, Microsoft Defender began quarantining `memcore-server.exe` from the 1.2.8 nightly after a security intelligence update on September 24, which stopped Memtrace from opening its store. The store server is now built with the same compiler as every other Memtrace binary, and each Windows build is still scanned with current Defender definitions before it is published.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.8-nightly.20260923.d761160",
     "published_at": "2026-09-23T17:03:46.681Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.8-nightly.20260923.d761160",
