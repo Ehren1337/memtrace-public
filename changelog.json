@@ -1,5 +1,14 @@
 [
   {
+    "tag_name": "v1.2.8-nightly.20260924.5e8ea4a",
+    "published_at": "2026-09-24T19:19:19.154Z",
+    "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.8-nightly.20260924.5e8ea4a",
+    "name": "Memtrace 1.2.8-nightly.20260924.5e8ea4a",
+    "body": "A re-thought engine for every language, a code graph you can actually read, and sharper tools for your agents\n\n### Improved\n- The All repositories graph shows each repository as its own island. Repositories that call or import each other sit side by side and blend along their shared border, unrelated ones sit apart, files with no relationships stay at the edge of their own repository, and each island keeps the shape it has when you open that repository on its own.\n\n### Fixed\n- The graph toolbar's zoom in, zoom out and fit-to-screen buttons work with the default renderer; they did nothing unless the compatibility renderer was selected. The graph also frames itself again once its layout settles, instead of staying framed on the wider starting layout.\n\nInstall: npm install -g memtrace@nightly",
+    "prerelease": true,
+    "draft": false
+  },
+  {
     "tag_name": "v1.2.8-nightly.20260924.a5b8db1",
     "published_at": "2026-09-24T17:51:44.352Z",
     "html_url": "https://www.npmjs.com/package/memtrace/v/1.2.8-nightly.20260924.a5b8db1",
